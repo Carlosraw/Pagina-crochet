@@ -1,0 +1,237 @@
+@font-face{
+    font-family: "  WebSymbolsRegular";
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot#iefix') format('embeded-opentype'),
+    url('fonts/websymbols-regular-webfont.woff') format('woff'),
+    url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+    url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background: url(../multimedia/paven.png);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Cabecera*/
+#header{
+    min-width: 1024px;
+    width: 100%;
+    height: 0px;
+    margin: 0px auto;
+}
+#header a{
+    text-decoration: none;
+}
+    
+
+#header #logotipo{
+    width: 340px;
+    margin: 0px auto;
+}
+
+
+
+#header #logotipo img{
+    display: block;
+    text-align: center;
+    width: 35px;
+}
+
+#header #logotipo2{
+    width: 640px;
+    margin-top: -44px;
+    height: 83px;
+}
+
+
+
+#header #logotipo2 img{
+    display: block;
+    text-align: center;
+    margin: 0px auto;
+    width: 35px;
+}
+
+
+
+#header h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: "nevis";
+    letter-spacing:4px ;
+    margin-top: -86px;
+    text-shadow: 0px 2px 1px #333333;
+    transition: all 300ms;
+
+}
+
+#header h1:hover{
+    text-shadow: 0px 1px 1px #333333, 0px 0px 4px purple ;
+
+}
+
+#header h1 a{
+    color: rgb(184, 134, 230);
+}
+
+/*Barra de navegación*/
+#nav{
+    height: 40px;
+    width: 100%;
+    background-color: lightblue;
+    color: black;
+    font-family: sans-serif, Arial, Helvetica;
+    font-size: 16px;
+    box-shadow: 0px 2px 3px #ccc;
+}
+  
+#nav ul {
+    justify-content: flex-end;
+    display: flex;
+    margin: 0px auto;
+    width: 89%;
+}
+  
+#nav ul li {
+    list-style-type: none;
+    text-align: left;
+    line-height: 40px;
+    border-right: 1px solid #687c83;
+    transition: all 300ms;
+}
+
+#nav > ul > li  a {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+#nav > ul > li:hover{
+    background-color: lightpink;
+    box-shadow: 0px 0px 4px pink inset;
+}
+
+#nav #primer{
+    border-left: 1px solid #687c83;
+}
+  
+  
+#nav ul li a {
+    padding: 10px;
+}
+
+/* Menu desplegable */
+
+#nav > ul > li > ul{
+    display: none;
+    position:absolute;  
+    width: 160px;
+    box-shadow: 0px 2px 2px gray;
+    z-index: 1;
+}
+
+#nav > ul > li:hover ul{
+    display: block;
+}
+
+#nav > ul > li:hover > ul > li{
+    background-color: rgb(252, 230, 233);
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;   
+    line-height: 25px;
+    font-size: 16px;
+    transition: all 300ms;
+}
+
+#ul > li:hover > ul > li > a{
+    color: #666;
+}
+
+#nav > ul > li:hover > ul > li:hover{
+    box-shadow: 0px 0px 2px #666 inset;
+    background-color: rgb(255, 224, 228);
+}
+
+body{
+    background-color: black;
+}
+
+/*Formulario*/
+.form-register{
+    width: 400px;
+    background: rgb(117, 177, 214);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: Calibri, sans-serif;
+    color: white;
+    box-shadow:7px 13px 37px #000 ;
+}
+.form-register h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+
+}
+
+.controls{
+    width: 100%;
+    background: #436180;
+    padding: 18px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-family: calibri;
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p{
+    height: 40px; 
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a{
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: royalblue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+
+/* Footer */
+#footer{
+    display: block;
+    width: 100%;
+    height: 48px;
+    background-color: darkgray;
+    font-size: 16px;
+    text-align: center; 
+}   
